@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gabriela Polanco | Portafolio</title>
+
+  <meta name="description" content="Portafolio de Gabriela Polanco, estudiante de diseño y desarrollo web y funcionalidad de software.">
+  <meta name="author" content="Gabriela Polanco">
+  <meta name="theme-color" content="#771F3A">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegación principal">
+      <div class="container">
+
+        <a class="navbar-brand" href="#inicio">
+          <span class="brand-mark">G.</span>
+          Gabriela Polanco
+        </a>
+
+        <div class="d-flex align-items-center order-lg-last ms-auto ms-lg-3">
+
+          <button id="themeToggle"
+                  class="btn theme-toggle me-2 me-lg-0"
+                  type="button"
+                  aria-label="Activar modo oscuro"
+                  aria-pressed="false">
+            <i id="themeIcon" class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+
+          <button class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainNav"
+                  aria-controls="mainNav"
+                  aria-expanded="false"
+                  aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto text-center">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#estudios">Estudios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- PORTADA -->
+    <section id="inicio" class="hero" aria-label="Presentación">
+
+      <div class="hero-decoration decoration-one"></div>
+      <div class="hero-decoration decoration-two"></div>
+
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 hero-content">
+
+            <span class="eyebrow">
+              <span class="eyebrow-line"></span>
+              PORTAFOLIO PERSONAL
+            </span>
+
+            <h1>
+              Gabriela <span>Polanco</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+              Estudiante de Desarrollo y Diseño Web
+            </h2>
+
+            <p class="lead hero-description">
+              Me interesa el diseño de páginas web y la funcionalidad
+              de software. Actualmente estoy desarrollando mis
+              conocimientos en programación, diseño de interfaces
+              y creación de soluciones digitales.
+            </p>
+
+            <div class="hero-actions d-flex flex-wrap gap-3">
+
+              <a href="#proyectos" class="btn btn-primary btn-lg px-4">
+                Ver mis proyectos
+                <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
+              </a>
+
+              <a href="#contacto" class="btn btn-outline-wine btn-lg px-4">
+                Contáctame
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-6">
+
+            <div class="hero-image-area">
+
+              <div class="image-frame">
+
+                <img
+                  class="hero-img"
+                  src="https://i.postimg.cc/k4h3sP8T/3e253a75dffe802a68dfcb154342514c.jpg"
+                  alt="Fotografía de Gabriela Polanco"
+                  width="500"
+                  height="500"
+                >
+
+                <div class="image-caption">
+                  GABRIELA POLANCO
+                  <span>2026</span>
+                </div>
+
+              </div>
+
+              <span class="floating-star">✳</span>
+              <span class="floating-circle"></span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-5">
+
+      <div class="container py-4">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-9 reveal">
+
+            <h2 class="section-title">
+              <i class="fas fa-user me-2" aria-hidden="true"></i>
+              Sobre mí
+            </h2>
+
+            <p class="lead about-description">
+              Soy estudiante de 6.º grado del nivel técnico.
+              Me estoy formando en el área de diseño y desarrollo
+              de páginas web y en la funcionalidad de aplicaciones
+              de software.
+            </p>
+
+            <p>
+              Me interesa aprender cómo se crean las páginas web,
+              desde su apariencia hasta la manera en que funcionan.
+              También me gusta trabajar con diferentes herramientas
+              tecnológicas y descubrir nuevas formas de desarrollar
+              proyectos digitales.
+            </p>
+
+            <p>
+              Actualmente continúo fortaleciendo mis conocimientos
+              en programación, diseño de interfaces y organización
+              de información, con el propósito de mejorar mis
+              habilidades técnicas.
+            </p>
+
+            <div class="mt-4" aria-label="Tecnologías y habilidades">
+
+              <span class="skill-badge">
+                <i class="fab fa-html5 me-1"></i> HTML5
+              </span>
+
+              <span class="skill-badge">
+                <i class="fab fa-css3-alt me-1"></i> CSS3
+              </span>
+
+              <span class="skill-badge">
+                <i class="fab fa-js me-1"></i> JavaScript
+              </span>
+
+              <span class="skill-badge">
+                <i class="fab fa-bootstrap me-1"></i> Bootstrap
+              </span>
+
+              <span class="skill-badge">
+                <i class="fas fa-code me-1"></i> C#
+              </span>
+
+              <span class="skill-badge">
+                <i class="fas fa-database me-1"></i> SQL
+              </span>
+
+              <span class="skill-badge">
+                <i class="fab fa-figma me-1"></i> Figma
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="row mt-5 g-4 text-center">
+
+          <div class="col-md-4 reveal">
+            <div class="about-feature h-100">
+              <i class="fas fa-laptop-code fa-3x mb-3"></i>
+              <h3 class="h5">Diseño Web</h3>
+              <p class="mb-0">
+                Creación de estructuras y diseños de páginas web
+                utilizando HTML y CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="about-feature h-100">
+              <i class="fas fa-code fa-3x mb-3"></i>
+              <h3 class="h5">Programación</h3>
+              <p class="mb-0">
+                Aprendizaje de lenguajes y herramientas para
+                desarrollar aplicaciones y soluciones digitales.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="about-feature h-100">
+              <i class="fas fa-gears fa-3x mb-3"></i>
+              <h3 class="h5">Software</h3>
+              <p class="mb-0">
+                Interés en la funcionalidad, organización
+                y manejo de aplicaciones informáticas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ESTUDIOS -->
+    <section id="estudios" class="py-5 bg-light">
+
+      <div class="container py-4">
+
+        <div class="text-center">
+          <h2 class="section-title">
+            <i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>
+            Estudios
+          </h2>
+        </div>
+
+        <div class="row justify-content-center g-4">
+
+          <div class="col-lg-8 reveal">
+
+            <article class="card education-card border-0 p-4">
+
+              <div class="d-flex align-items-start gap-3">
+
+                <div class="education-icon">
+                  <i class="fas fa-school"></i>
+                </div>
+
+                <div>
+
+                  <span class="education-date">
+                    FORMACIÓN ACADÉMICA · 2026
+                  </span>
+
+                  <h3 class="h4 mt-2">
+                    Educación Secundaria Técnica
+                  </h3>
+
+                  <p class="education-level">
+                    6.º grado del nivel técnico
+                  </p>
+
+                  <p class="mb-0">
+                    Actualmente curso el nivel técnico de secundaria,
+                    desarrollando conocimientos académicos y
+                    habilidades relacionadas con la tecnología,
+                    el diseño web y la programación.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <div class="col-lg-8 reveal">
+
+            <article class="card education-card border-0 p-4">
+
+              <div class="d-flex align-items-start gap-3">
+
+                <div class="education-icon">
+                  <i class="fas fa-computer"></i>
+                </div>
+
+                <div>
+
+                  <span class="education-date">
+                    ÁREA TÉCNICA
+                  </span>
+
+                  <h3 class="h4 mt-2">
+                    Desarrollo e Implementación de Soluciones Web
+                  </h3>
+
+                  <p class="education-level">
+                    Formación técnica
+                  </p>
+
+                  <p class="mb-0">
+                    Aprendizaje de herramientas y lenguajes para
+                    diseñar páginas web, crear interfaces,
+                    desarrollar funcionalidades y comprender
+                    el funcionamiento de aplicaciones de software.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-5">
+
+      <div class="container py-4">
+
+        <div class="text-center">
+          <h2 class="section-title">
+            <i class="fas fa-project-diagram me-2" aria-hidden="true"></i>
+            Proyectos
+          </h2>
+        </div>
+
+        <div class="row g-4">
+
+
+          <!-- PROYECTO 1 -->
+          <div class="col-md-4 reveal">
+
+            <article class="card project-card h-100">
+
+              <img
+                src="https://i.postimg.cc/9XJ9VjrZ/high-level-description-a-clean-studio-pr-HXA0i-7d-Xj-OZ3Ye-Xu94o0w-z-Ln-Ua-JWQ5KE4dx30GL47Q.jpg"
+                class="card-img-top"
+                alt="Diseño de tienda virtual"
+                loading="lazy"
+                width="400"
+                height="220"
+              >
+
+              <div class="card-body d-flex flex-column">
+
+                <h3 class="card-title h5">
+                  Dulces Momentos 
+                </h3>
+
+                <div class="tech-tags mb-2">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <p class="card-text">
+                  Página web de repostería que presenta un catálogo de pasteles, cupcakes y galletas con un diseño cálido y atractivo.
+                </p>
+
+                <a href="#proyectos" class="btn btn-primary mt-auto">
+                  Ver Proyecto
+                  <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- PROYECTO 2 -->
+          <div class="col-md-4 reveal">
+
+            <article class="card project-card h-100">
+
+              <img
+                src="https://i.postimg.cc/sxXv1vvx/high-level-description-a-3d-rendered-por-r-Eszv9L0Vjaq50t23700Jg-m2Zai-ZMk-SPu-Ft-X0m-XXf4Ig.jpg"
+                class="card-img-top"
+                alt="Panel de información y estadísticas"
+                loading="lazy"
+                width="400"
+                height="220"
+              >
+
+              <div class="card-body d-flex flex-column">
+
+                <h3 class="card-title h5">
+                  Biblioteca ANIMAN
+                </h3>
+
+                <div class="tech-tags mb-2">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <p class="card-text">
+                  Página informativa para explorar títulos de anime y manga, conocer sus sinopsis y descubrir historias de distintos géneros.
+                </p>
+
+                <a href="#proyectos" class="btn btn-primary mt-auto">
+                  Ver Proyecto
+                  <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- PROYECTO 3 -->
+          <div class="col-md-4 reveal">
+
+            <article class="card project-card h-100">
+
+              <img
+                src="https://i.postimg.cc/3xpWyMJc/high-level-description-a-3d-rendered-ver-e-NT4UCCXUSX-6Bo-LBEo-MQ-IKD0Kt-Cu-Qwi-Pz-Il7w-Jlst-Q.jpg"
+                class="card-img-top"
+                alt="Interfaz de gestión digital"
+                loading="lazy"
+                width="400"
+                height="220"
+              >
+
+              <div class="card-body d-flex flex-column">
+
+                <h3 class="card-title h5">
+                   Sistema de Reparaciones 
+                </h3>
+
+                <div class="tech-tags mb-2">
+                  <span>C#</span>
+                  <span>SQL</span>
+                  <span>Windows Forms</span>
+                </div>
+
+                <p class="card-text">
+                Sistema para gestionar ventas, registrar la recepción de celulares y dar seguimiento al estado de las reparaciones.
+                </p>
+
+                <a href="#proyectos" class="btn btn-primary mt-auto">
+                  Ver Proyecto
+                  <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACTO: FORMULARIO ORIGINAL CONSERVADO -->
+    <section id="contacto" class="py-5 bg-light">
+
+      <div class="container py-4">
+
+        <div class="text-center">
+
+          <h2 class="section-title">
+            <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+            Contacto
+          </h2>
+
+          <p class="mb-4">
+            ¿Tienes un proyecto en mente? Escríbeme y conversemos. ✨
+          </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-7 reveal">
+
+            <form id="contactForm"
+                  class="contact-form card p-4 shadow-sm"
+                  novalidate
+                  aria-label="Formulario de contacto">
+
+              <div class="mb-3">
+
+                <label for="name" class="form-label">
+                  Nombre
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                  required
+                >
+
+                <div class="invalid-feedback">
+                  Por favor, ingresa tu nombre.
+                </div>
+
+              </div>
+
+
+              <div class="mb-3">
+
+                <label for="email" class="form-label">
+                  Correo electrónico
+                </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="tu@correo.com"
+                  autocomplete="email"
+                  required
+                >
+
+                <div class="invalid-feedback">
+                  Ingresa un correo electrónico válido.
+                </div>
+
+              </div>
+
+
+              <div class="mb-3">
+
+                <label for="message" class="form-label">
+                  Mensaje
+                </label>
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Cuéntame sobre tu proyecto..."
+                  required
+                ></textarea>
+
+                <div class="invalid-feedback">
+                  Escribe un mensaje.
+                </div>
+
+              </div>
+
+
+              <button type="submit"
+                      class="btn btn-primary w-100 py-2">
+
+                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>
+                Enviar Mensaje
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: REDES SOCIALES -->
+  <footer class="site-footer py-4">
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div class="footer-information">
+
+          <a href="#inicio" class="footer-brand">
+            G.
+          </a>
+
+          <div>
+            <h3>Gabriela Polanco</h3>
+            <p class="mb-0">
+              © <span id="year">2026</span> Todos los derechos reservados.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="social-links">
+
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+
+          <a
+            href="https://gablix-del.github.io/portafolio-gabriela-polanco/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript propio -->
+  <script src="./script.js"></script>
+
+</body>
+</html>

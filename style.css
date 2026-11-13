@@ -1,0 +1,1202 @@
+
+/* =========================================
+   GLOBAL WEBSITE THEME
+   BURGUNDY · CREAM · KHAKI
+========================================= */
+
+:root {
+    --page-bg: #F3EBDD;
+    --surface: #FFFDF8;
+    --surface-alt: #EDE2D3;
+
+    --text-main: #332725;
+    --text-secondary: #756761;
+
+    --accent: #782B3A;
+    --accent-hover: #5C1E2C;
+    --accent-soft: #E9D8C8;
+
+    --border-color: #E5D6C7;
+    --shadow-color: rgba(66, 43, 37, 0.09);
+
+    --input-bg: #FFFDF8;
+    --input-border: #DCCABD;
+
+    --footer-bg: #E9D8C8;
+
+    --page-transition: 0.4s ease;
+}
+
+/* =========================================
+   DARK MODE VARIABLES
+========================================= */
+
+body.dark {
+    --page-bg: #29201F;
+    --surface: #382B29;
+    --surface-alt: #443431;
+
+    --text-main: #F6EDE3;
+    --text-secondary: #D1BFB2;
+
+    --accent: #D9A7A0;
+    --accent-hover: #E9C2B9;
+    --accent-soft: #59423D;
+
+    --border-color: #66504A;
+    --shadow-color: rgba(0, 0, 0, 0.22);
+
+    --input-bg: #443431;
+    --input-border: #765A53;
+
+    --footer-bg: #211918;
+}
+
+/* =========================================
+   PAGE BACKGROUND AND GENERAL TEXT
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text-main);
+
+    font-family: "DM Sans", sans-serif;
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition);
+}
+
+main {
+    background-color: var(--page-bg);
+    transition: background-color var(--page-transition);
+}
+
+body.dark main {
+    background-color: var(--page-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-main);
+    transition: color var(--page-transition);
+}
+
+p {
+    color: var(--text-secondary);
+    transition: color var(--page-transition);
+}
+
+.lead {
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 75px 0;
+
+    overflow: hidden;
+
+    background-color: var(--page-bg);
+
+    transition: background-color var(--page-transition);
+}
+
+.hero h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+    transition: color var(--page-transition);
+}
+
+.hero-subtitle {
+    margin-top: 18px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 550px;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--accent);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.eyebrow-line {
+    width: 35px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.hero-decoration {
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    pointer-events: none;
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition);
+}
+
+.decoration-one {
+    width: 300px;
+    height: 300px;
+    top: -120px;
+    right: -100px;
+    background: rgba(120, 43, 58, 0.06);
+}
+
+.decoration-two {
+    width: 180px;
+    height: 180px;
+    bottom: -90px;
+    left: -70px;
+    border: 2px solid rgba(120, 43, 58, 0.13);
+}
+
+body.dark .decoration-one {
+    background: rgba(217, 167, 160, 0.07);
+}
+
+body.dark .decoration-two {
+    border-color: rgba(217, 167, 160, 0.18);
+}
+
+/* HERO IMAGE */
+
+.hero-image-area {
+    position: relative;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.image-frame {
+    position: relative;
+    padding: 13px;
+
+    border-radius: 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 20px 50px var(--shadow-color);
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition);
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: 480px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 16px;
+}
+
+.image-caption {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 5px 3px;
+
+    color: var(--text-main);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.image-caption span {
+    color: var(--accent);
+}
+
+.floating-star {
+    position: absolute;
+    top: 20px;
+    right: -25px;
+
+    color: var(--accent);
+    font-size: 3rem;
+}
+
+.floating-circle {
+    position: absolute;
+    bottom: 45px;
+    left: -25px;
+
+    width: 55px;
+    height: 55px;
+
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+}
+
+.hero-img-fallback {
+    display: grid;
+    place-items: center;
+
+    height: 480px;
+
+    border-radius: 16px;
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+}
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+main section:not(.hero) {
+    background-color: var(--page-bg);
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition);
+}
+
+#sobre-mi,
+#proyectos {
+    background-color: var(--page-bg);
+}
+
+#estudios,
+#contacto {
+    background-color: var(--surface-alt) !important;
+}
+
+.section-title {
+    margin-bottom: 35px;
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-weight: 700;
+}
+
+.section-title i {
+    font-size: 0.75em;
+}
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.skill-badge {
+    display: inline-block;
+
+    margin: 5px 5px 5px 0;
+    padding: 9px 15px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+
+    background: var(--surface);
+    color: var(--text-main);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition),
+        transform 0.25s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.about-feature {
+    padding: 35px 25px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+
+    background: var(--surface);
+
+    box-shadow: 0 8px 25px var(--shadow-color);
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition),
+        transform 0.3s ease;
+}
+
+.about-feature:hover {
+    transform: translateY(-6px);
+}
+
+.about-feature > i {
+    color: var(--accent);
+}
+
+.about-feature h3 {
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   STUDIES SECTION
+========================================= */
+
+.education-card {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 18px;
+
+    background-color: var(--surface) !important;
+    color: var(--text-main);
+
+    box-shadow: 0 8px 25px var(--shadow-color);
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition),
+        transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+}
+
+.education-icon {
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 15px;
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    font-size: 1.4rem;
+}
+
+.education-date {
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.education-level {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* =========================================
+   PROJECT CARDS
+========================================= */
+
+.project-card {
+    overflow: hidden;
+
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+
+    background-color: var(--surface);
+    color: var(--text-main);
+
+    box-shadow: 0 8px 25px var(--shadow-color);
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition),
+        transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px var(--shadow-color);
+}
+
+.project-card .card-img-top {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    background-color: var(--surface);
+    color: var(--text-main);
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition);
+}
+
+.project-card .card-title {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.project-card .card-text {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.tech-tags span {
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-primary {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #FFFDF8 !important;
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition),
+        color var(--page-transition),
+        transform 0.25s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover) !important;
+    border-color: var(--accent-hover) !important;
+    color: #FFFDF8 !important;
+
+    transform: translateY(-2px);
+}
+
+.btn-outline-wine {
+    border: 1.5px solid var(--accent) !important;
+    background: transparent !important;
+    color: var(--accent) !important;
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition),
+        transform 0.25s ease;
+}
+
+.btn-outline-wine:hover {
+    background: var(--accent) !important;
+    color: var(--page-bg) !important;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 18px;
+
+    background-color: var(--surface) !important;
+    color: var(--text-main);
+
+    box-shadow: 0 10px 30px var(--shadow-color) !important;
+
+    transition:
+        background-color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition);
+}
+
+.form-label {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 12px 14px;
+
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+
+    background-color: var(--input-bg);
+    color: var(--text-main);
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition),
+        box-shadow var(--page-transition);
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.75;
+}
+
+.form-control:focus {
+    border-color: var(--accent);
+
+    background-color: var(--input-bg);
+    color: var(--text-main);
+
+    box-shadow: 0 0 0 3px rgba(120, 43, 58, 0.12);
+}
+
+body.dark .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(217, 167, 160, 0.15);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background-color: var(--footer-bg);
+    color: var(--text-main);
+
+    border-top: 1px solid var(--border-color);
+
+    transition:
+        background-color var(--page-transition),
+        color var(--page-transition),
+        border-color var(--page-transition);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-information {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-brand {
+    display: grid;
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: var(--accent);
+    color: #FFFDF8;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        background-color var(--page-transition),
+        transform 0.25s ease;
+}
+
+.footer-brand:hover {
+    transform: rotate(-5deg);
+}
+
+.footer-information h3 {
+    margin: 0 0 5px;
+
+    color: var(--text-main);
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+}
+
+.footer-information p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-links a {
+    color: var(--accent);
+    text-decoration: none;
+
+    transition:
+        color var(--page-transition),
+        transform 0.25s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-hover);
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   DARK MODE: COMPLETE PAGE
+========================================= */
+
+body.dark,
+body.dark main,
+body.dark main section:not(.hero),
+body.dark #sobre-mi,
+body.dark #proyectos {
+    background-color: var(--page-bg);
+    color: var(--text-main);
+}
+
+body.dark #estudios,
+body.dark #contacto {
+    background-color: var(--surface-alt) !important;
+}
+
+body.dark .about-feature,
+body.dark .skill-badge,
+body.dark .education-card,
+body.dark .project-card,
+body.dark .project-card .card-body,
+body.dark .contact-form {
+    background-color: var(--surface) !important;
+    color: var(--text-main);
+    border-color: var(--border-color) !important;
+}
+
+body.dark .project-card .card-title,
+body.dark .education-card h3,
+body.dark .about-feature h3,
+body.dark .form-label,
+body.dark .contact-form label {
+    color: var(--text-main);
+}
+
+body.dark .project-card .card-text,
+body.dark .education-card p,
+body.dark .about-feature p,
+body.dark .contact-form p {
+    color: var(--text-secondary);
+}
+
+body.dark .skill-badge {
+    background-color: var(--surface-alt);
+}
+
+body.dark .tech-tags span {
+    background-color: var(--accent-soft);
+    color: var(--accent);
+}
+
+body.dark .form-control,
+body.dark .form-control:focus {
+    background-color: var(--input-bg);
+    color: var(--text-main);
+    border-color: var(--input-border);
+}
+
+body.dark .form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+body.dark .site-footer {
+    background-color: var(--footer-bg);
+    border-color: var(--border-color);
+}
+
+body.dark .footer-information h3 {
+    color: var(--text-main);
+}
+
+body.dark .footer-information p {
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   REVEAL ANIMATIONS
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991.98px) {
+    .hero {
+        min-height: auto;
+        padding: 65px 0;
+    }
+
+    .hero-image-area {
+        max-width: 390px;
+    }
+
+    .hero-img {
+        height: 420px;
+    }
+
+    .hero-img-fallback {
+        height: 420px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-img {
+        height: 350px;
+    }
+
+    .hero-img-fallback {
+        height: 350px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .floating-star {
+        right: -10px;
+    }
+
+    .floating-circle {
+        left: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-frame {
+        padding: 9px;
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+
+    .hero-img-fallback {
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .education-card {
+        padding: 20px !important;
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================
+   TRANSPARENT NAVIGATION → FIXED NAVIGATION
+========================================= */
+
+/* Remove the space reserved above the page */
+body {
+    padding-top: 0 !important;
+}
+
+/* Keep navigation above all page content */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+
+    min-height: 82px;
+    padding: 12px 0;
+
+    background: transparent !important;
+    border-bottom: 1px solid transparent !important;
+    box-shadow: none !important;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    transition:
+        background-color 0.5s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease,
+        backdrop-filter 0.5s ease,
+        padding 0.4s ease;
+}
+
+/* Keep the hero content below the overlapping navigation */
+.hero {
+    padding-top: 145px !important;
+}
+
+/* =========================================
+   TOP OF PAGE — LIGHT MODE
+========================================= */
+
+.navbar:not(.scrolled) .navbar-brand {
+    color: #782B3A !important;
+}
+
+.navbar:not(.scrolled) .navbar .nav-link {
+    color: #756761 !important;
+}
+
+.navbar:not(.scrolled) .nav-link:hover,
+.navbar:not(.scrolled) .nav-link.active {
+    color: #782B3A !important;
+    background: rgba(120, 43, 58, 0.09);
+}
+
+/* =========================================
+   TOP OF PAGE — DARK MODE
+========================================= */
+
+body.dark .navbar:not(.scrolled) {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+body.dark .navbar:not(.scrolled) .navbar-brand {
+    color: #F0C9C1 !important;
+}
+
+body.dark .navbar:not(.scrolled) .nav-link {
+    color: #F6EDE3 !important;
+}
+
+body.dark .navbar:not(.scrolled) .nav-link:hover,
+body.dark .navbar:not(.scrolled) .nav-link.active {
+    color: #FFFFFF !important;
+    background: rgba(217, 167, 160, 0.17);
+}
+
+/* =========================================
+   WHEN SCROLLING — LIGHT MODE
+========================================= */
+
+.navbar.scrolled {
+    min-height: 72px;
+    padding: 8px 0;
+
+    background: rgba(255, 253, 248, 0.96) !important;
+
+    border-bottom: 1px solid rgba(120, 43, 58, 0.16) !important;
+
+    box-shadow: 0 8px 30px rgba(66, 43, 37, 0.12) !important;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+/* =========================================
+   WHEN SCROLLING — DARK MODE
+========================================= */
+
+body.dark .navbar.scrolled {
+    background: rgba(41, 32, 31, 0.97) !important;
+
+    border-bottom: 1px solid rgba(217, 167, 160, 0.2) !important;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+body.dark .navbar.scrolled .navbar-brand {
+    color: #F0C9C1 !important;
+}
+
+body.dark .navbar.scrolled .nav-link {
+    color: #D1BFB2 !important;
+}
+
+body.dark .navbar.scrolled .nav-link:hover,
+body.dark .navbar.scrolled .nav-link.active {
+    color: #FFFFFF !important;
+    background: rgba(217, 167, 160, 0.15);
+}
+
+/* =========================================
+   BRAND — ALWAYS VISIBLE
+========================================= */
+
+.navbar-brand {
+    position: relative;
+    z-index: 2;
+
+    white-space: nowrap;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.navbar-brand .brand-mark {
+    flex-shrink: 0;
+}
+
+/* =========================================
+   MOBILE MENU VISIBILITY
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        margin-top: 12px;
+        padding: 14px;
+
+        border-radius: 16px;
+
+        background: rgba(255, 253, 248, 0.98) !important;
+
+        border: 1px solid rgba(120, 43, 58, 0.15);
+
+        box-shadow: 0 12px 30px rgba(66, 43, 37, 0.12);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
+
+    body.dark .navbar-collapse {
+        background: rgba(56, 43, 41, 0.98) !important;
+
+        border-color: rgba(217, 167, 160, 0.22);
+    }
+
+    body.dark .navbar-collapse .nav-link {
+        color: #F6EDE3 !important;
+    }
+
+    body.dark .navbar-collapse .nav-link:hover,
+    body.dark .navbar-collapse .nav-link.active {
+        color: #FFFFFF !important;
+        background: rgba(217, 167, 160, 0.17);
+    }
+
+    .hero {
+        padding-top: 130px !important;
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar,
+    .navbar * {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================
+   FINAL NAVBAR COLOR ADJUSTMENTS
+========================================= */
+
+/* WARMER LIGHT MODE WHEN SCROLLING */
+.navbar.scrolled {
+    background: rgba(237, 222, 203, 0.97) !important;
+    border-bottom-color: rgba(120, 43, 58, 0.18) !important;
+    box-shadow: 0 8px 28px rgba(66, 43, 37, 0.12) !important;
+}
+
+/* WARM MOBILE MENU */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(237, 222, 203, 0.98) !important;
+        border-color: rgba(120, 43, 58, 0.18) !important;
+    }
+}
+
+/* =========================================
+   DARK MODE — THEME BUTTON
+========================================= */
+
+body.dark .theme-toggle,
+body.dark .theme-toggle:focus {
+    background: #E9C2B9 !important;
+    color: #29201F !important;
+    border: 1px solid #E9C2B9 !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .theme-toggle i {
+    color: #29201F !important;
+}
+
+body.dark .theme-toggle:hover {
+    background: #F6EDE3 !important;
+    color: #29201F !important;
+    border-color: #F6EDE3 !important;
+}
+
+/* =========================================
+   DARK MODE — MOBILE MENU BUTTON
+========================================= */
+
+body.dark .navbar-toggler {
+    background: #E9C2B9 !important;
+    border: 1px solid #E9C2B9 !important;
+    opacity: 1 !important;
+}
+
+body.dark .navbar-toggler:hover {
+    background: #F6EDE3 !important;
+    border-color: #F6EDE3 !important;
+}
+
+/* Make the hamburger icon dark and visible */
+body.dark .navbar-toggler-icon {
+    filter: brightness(0) saturate(100%) !important;
+    opacity: 0.9;
+}
+
+/* =========================================
+   LIGHT MODE — BUTTON CONTRAST
+========================================= */
+
+.navbar .theme-toggle {
+    background: #E9D8C8 !important;
+    color: #782B3A !important;
+    border-color: #B98D80 !important;
+}
+
+.navbar .navbar-toggler {
+    background: #E9D8C8 !important;
+    border-color: #B98D80 !important;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: none;
+}
+
+/* =========================================
+   SMOOTH COLOR TRANSITIONS
+========================================= */
+
+.navbar,
+.navbar .theme-toggle,
+.navbar .navbar-toggler,
+.navbar .navbar-toggler-icon,
+.navbar-collapse {
+    transition:
+        background-color 0.45s ease,
+        color 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease,
+        filter 0.45s ease;
+}
